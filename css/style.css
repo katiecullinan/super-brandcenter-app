@@ -1,0 +1,300 @@
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	background-color: #fbfbfb;
+	oveflow-x:hidden;
+
+}
+
+h1, h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	font-weight: 400;
+	color: #29353a;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 0;
+}
+
+h3 {
+	color: gray;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	
+	
+}
+
+
+header {
+	padding: 2em 10em;
+	background-color: #fbfbfb;
+	margin: 0;
+	text-align: center;
+}
+
+.title-text1, .title-text2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+	}
+
+	.title-text1 {
+		margin-top: 1em;
+	}
+
+	.title-text2 {
+		color: #9eb9aa;
+	}
+
+/* Menus */
+
+.menu, .mobile-menu{
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+	text-align: center;
+	border: 2px solid #29353a;
+	color: #29353a;
+	margin: 2em auto 0;
+}
+
+	.menu img {
+		width: 25px;
+	}	
+
+	.menu p {
+		margin: 0;
+		padding: .5em;
+		font-size: 1.5em;
+	}
+
+	.open-menu {
+		display: none;
+	
+	}
+
+	.open-menu ul{
+		list-style: none;
+		padding: 0 1em;
+		margin-top: .5em;
+	}
+	.open-menu li{
+		padding-top: 4px;
+	}
+
+	.open-menu a{
+		text-decoration: none;
+		color:#29353a;
+		padding-top: 2px;
+	}
+	.open-menu a:hover{
+		border-bottom: 2px solid white;
+		color:white;
+	}
+
+	.menu:hover{
+		background-color: #9eb9aa;
+		cursor: pointer;
+	}
+
+	.mobile-menu a:hover{
+		border-bottom: 2px solid #29353a;
+		color:#29353a;
+	}
+
+
+/* Into */
+
+section {
+	width: 100%;
+	
+}
+
+.clearfix:after {
+   content: " "; 
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}	
+
+.first {
+	font-size: 30px;
+	text-align: center;
+	background-color: #9eb9aa;
+	margin-top: 0;
+}
+
+.first-text {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #9eb9aa;
+	padding: 1em 1em 2em 1em;
+	color: white;
+	font-weight: 300;
+}
+
+
+/* Modal styling */
+
+.modal-content {
+	display: none;
+	width: 700px;
+	height: auto;
+	background-color: #fbfbfb;
+	border: 2px solid #29353a;
+	color: #29353a;
+	/*box-shadow: 0 2px 50px rgb(202, 202, 202);*/
+	line-height: 1.5em;
+	font-family: 'Source Sans Pro', sans-serif;
+
+
+
+}
+
+	.modal-text {
+		padding: 6%;
+		
+	}
+
+	.button {
+		margin-left:auto;
+		margin-right: auto;
+		padding: 3px;
+		border: none;
+		text-align: center;
+		border: 2px solid #29353a;
+		color: #29353a;
+		width: 100px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: 'Source Sans Pro', sans-serif;
+		cursor: pointer;
+	}
+		.button:hover{
+			background-color: #9eb9aa;
+		}
+
+
+
+/* Essay Questions */
+
+.thirds {
+	width: 33%;
+	float: left;
+	height: auto;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.thirds img {
+	width: 100%;
+	
+}
+
+.thirds 
+
+
+
+.book-quote {
+	padding: 1em;
+	color: #9eb9aa;
+	cursor: auto;
+}
+
+.essayquestions {
+	margin: 0 auto;
+	
+}
+
+footer {
+	background-color: #29353a;
+
+}
+
+footer p {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+	padding: 2em 10em;
+	text-align: center;
+	color: white;
+
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
+}
+
+footer p a:hover {
+	border-bottom: 2px solid white;
+
+	}
+
+.mobile-menu {
+	display:none;
+
+}
+
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1000px) {
+	
+	header {
+	padding: 2em 4em;
+	}
+	
+	footer p{
+	padding: 2em 4em;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.mobile-menu {
+	display:inline-block;
+	border: 2px solid #29353a;
+	color: #29353a;
+	margin: 2em auto 0;
+	padding: .5em;
+	text-align: center;
+
+	}
+
+
+}
+
+/* Even smaller screens */
+
+@media only screen and (max-width: 700px) {
+	h1 { font-size: 1.5em;}
+
+	header, footer p{
+	padding: 2em 1em;
+	}
+
+	.first { font-size: 20px;}
+
+	#ct, #story {font-size: 2em;}
+
+	.thirds {
+		width: 100%
+	}
+
+}	
