@@ -5,7 +5,7 @@
 
 body {
 	
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Merriweather', 'Lora', serif; 
 	margin: 0;
 	background-color: #fbfbfb;
 	oveflow-x:hidden;
@@ -48,6 +48,7 @@ header {
 	letter-spacing: 2px;
 	font-size: 30px;
 	font-weight: 600;
+	margin-top: 2em;
 	}
 
 	.title-text1 {
@@ -146,10 +147,10 @@ section {
 .first-text {
 	max-width: 1000px;
 	margin: 0 auto;
-	background-color: #9eb9aa;
 	padding: 1em;
 	color: #fbfbfb;
 	font-weight: 300;
+	font-style: italic;
 }
 
 .first-text p{
@@ -161,18 +162,21 @@ section {
 
 .modal-content {
 	display: none;
-	width: 700px;
+	width: 800px;
 	height: auto;
 	background-color: #fbfbfb;
-	border: 2px solid #29353a;
+	
 	color: #29353a;
 	/*box-shadow: 0 2px 50px rgb(202, 202, 202);*/
-	line-height: 1.5em;
-	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 2em;
+	
+	font-family: 'Merriweather', serif;
 }
 
 	.modal-text {
 		padding: 6%;
+		border: 2px solid #29353a;
+		font-size: .9em;
 		
 	}
 
@@ -193,6 +197,13 @@ section {
 		.button:hover{
 			background-color: #9eb9aa;
 		}
+
+	.modal-pic {
+		width: 60%;
+		margin: 0 auto;
+	
+
+	}	
 
 
 
@@ -226,25 +237,27 @@ section {
 
 footer {
 	background-color: #29353a;
+	padding-top: 2em;
 
 }
 
 footer p {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 300;
 	margin: 0;
 	padding: 2em 10em;
 	text-align: center;
 	color: #fbfbfb;
+	line-height: 1.5em;
 }
 
 footer p a {
 	text-decoration: none;
-	color: #fbfbfb;
+	color: #9eb9aa;
 }
 
 footer p a:hover {
-	border-bottom: 2px solid #fbfbfb;
+	border-bottom: 2px solid #9eb9aa;
 	}
 
 
@@ -264,7 +277,7 @@ span.image-title {
   	height: 100%;
  	left: 0;
   	position: absolute;
-  	top: 0;
+  	bottom: 0;
   	width: 100%;
    	opacity: 0;
   -webkit-transition: opacity 500ms;
@@ -277,11 +290,13 @@ span.image-title {
 	  text-align: center;
 	  vertical-align: middle;
 	  height: 100%;
-	  font-weight: 300;
-	  font-size: 1.5em;
+	  font-weight: 600;
+	  font-size: 1em;
 	  padding: 1.25em;
 	  margin: auto;
-
+	  text-transform: uppercase;
+	 	letter-spacing: 2px;
+	 	font-family: 'Open Sans', sans-serif;
 	}
 
 ul.img-list li:hover span.text-content {
