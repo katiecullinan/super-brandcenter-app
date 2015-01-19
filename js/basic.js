@@ -61,6 +61,41 @@ jQuery(function ($) {
 		return false;
 	});
 
+	$('#everyday-product').click(function (e) {
+		$('#everyday-product-content').modal();
+
+		return false;
+	});
+	$('#new-technology').click(function (e) {
+		$('#new-tech-content').modal();
+
+		return false;
+	});
+	$('#my-skills').click(function (e) {
+		$('#skills-content').modal();
+
+		return false;
+	});
+	$('#sample1').click(function (e) {
+		$('#sample1-content').modal();
+
+		return false;
+	});
+	$('#sample2').click(function (e) {
+		$('#sample2-content').modal();
+
+		return false;
+	});
+	$('#sample3').click(function (e) {
+		$('#sample3-content').modal();
+
+		return false;
+	});
+
+
+
+
+
 
 
 });
