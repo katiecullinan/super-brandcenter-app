@@ -27,7 +27,7 @@ h2 {
 
 h3 {
 	color: gray;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300;
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -64,7 +64,7 @@ header {
 .menu, .mobile-menu{
 	text-transform: uppercase;
 	display: inline-block;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif; 
 	letter-spacing: 2px;
 	text-align: center;
 	border: 2px solid #29353a;
@@ -162,7 +162,7 @@ section {
 
 .modal-content {
 	display: none;
-	width: 800px;
+	width: 850px;
 	height: auto;
 	background-color: #fbfbfb;
 	
@@ -191,8 +191,9 @@ section {
 		width: 100px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Open Sans', sans-serif; 
 		cursor: pointer;
+		clear: both;
 	}
 		.button:hover{
 			background-color: #9eb9aa;
@@ -201,11 +202,26 @@ section {
 	.modal-pic {
 		width: 60%;
 		margin: 0 auto;
+	}	
 	
 
-	}	
+	.skill-column ul {
+		list-style: none;
+		margin-top: 0;
+		padding-left: 0;
+		font-size: 1em;
+	}
 
+	.skill-column{
+		font-weight: bold;
+		width: 33%;
+		float: left;
+		padding-left: 1em;
+	}
 
+	.sample-images {
+		text-align: center;
+	}
 
 /* Essay Questions */
 
@@ -308,6 +324,44 @@ ul.img-list li:hover span.text-content {
 
 .thirds a:hover{
 	background-color: #fbfbfb;
+}
+
+
+/*Back to top */
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: gray url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+ 
+  visibility: visible;
+  opacity: 1;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 /* Smaller screens */
