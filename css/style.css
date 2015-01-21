@@ -204,6 +204,9 @@ section {
 		margin: 0 auto;
 	}	
 	
+	#love-parents-content {
+		text-align: center;
+	}
 
 	.skill-column ul {
 		list-style: none;
