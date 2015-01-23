@@ -226,6 +226,17 @@ section {
 		text-align: center;
 	}
 
+	.modal-text a:hover{
+		border-bottom: 2px solid #9eb9aa;
+		color: #9eb9aa;
+	}
+
+	.modal-text a {
+		color: #9eb9aa;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
 /* Essay Questions */
 
 .thirds {
