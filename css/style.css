@@ -165,7 +165,8 @@ section {
 	width: 850px;
 	height: auto;
 	background-color: #fbfbfb;
-	
+	margin-right: auto;
+	margin-left: auto;
 	color: #29353a;
 	/*box-shadow: 0 2px 50px rgb(202, 202, 202);*/
 	line-height: 2em;
@@ -404,6 +405,17 @@ ul.img-list li:hover span.text-content {
 
 	}
 
+	.modal-content {
+	width: 700px;
+
+}
+
+span.image-title {
+		opacity: 1;
+		font-size: .7em;
+	}
+
+
 
 }
 
@@ -423,5 +435,9 @@ ul.img-list li:hover span.text-content {
 	.thirds {
 		width: 100%
 	}
+	.modal-content {
+	width: 100%;
+	}
+	
 
 }	
