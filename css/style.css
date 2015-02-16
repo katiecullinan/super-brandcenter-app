@@ -204,7 +204,9 @@ section {
 		width: 60%;
 		margin: 0 auto;
 	}	
-	
+	.modal-pic2 {
+		width:100%;
+	}
 	#love-parents-content {
 		text-align: center;
 	}
